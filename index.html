@@ -19,14 +19,14 @@
   </head>
   <body>
     <!-- btn on small screen size -->
-    <div class="add_new_btn_mobile_only ">
+    <div class="add_new_btn_mobile_only d-md-none ">
       <button 
       class="btn btn-outline-dark d-flex align-items-center gap-3"
       type="submit" data-bs-toggle="modal" data-bs-target="#AddNewModal">
       <i class="fa-solid fa-plus me-2"></i>Add New Item
     </button>
     </div>
-    <!-- modal -->
+    <!-- Add_item_modal -->
     <div class="modal fade" id="AddNewModal" tabindex="-1" aria-labelledby="AddNewModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
           <div class="modal-content">
@@ -75,7 +75,29 @@
             </div>
           </div>
         </div>
-      </div>
+       </div>
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+      <!-- Task_opening_modal -->
+       <div class="modal fade" id="showtask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Task Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body task_modal_body">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Tasky </a>
